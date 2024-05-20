@@ -1,0 +1,37 @@
+[gd_scene load_steps=14 format=3 uid="uid://kfl355psmtex"]
+
+[ext_resource type="PackedScene" uid="uid://cxsdk20ica4m5" path="res://Modelos Não Riggados/Steve.fbx" id="1_hcx11"]
+[ext_resource type="Texture2D" path="res://Modelos Não Riggados/T_QMTorso01_BC.dds" id="2_ckt8d"]
+[ext_resource type="Texture2D" path="res://Modelos Não Riggados/T_QMTorso00_BC.dds" id="3_6guy4"]
+[ext_resource type="Texture2D" path="res://Modelos Não Riggados/T_QMLegs01_BC.dds" id="4_bv7tl"]
+[ext_resource type="Texture2D" path="res://Modelos Não Riggados/T_QMHead00_BC.dds" id="5_eupf1"]
+[ext_resource type="Texture2D" uid="uid://d0oyp46eqcvlm" path="res://Modelos Não Riggados/T_QMHair00_BC.tga" id="6_5anq6"]
+[ext_resource type="Texture2D" uid="uid://cx0si6jodq3lp" path="res://Modelos Não Riggados/T_CMMLashes01_BC.png" id="7_k5vho"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4brua"]
+albedo_texture = ExtResource("2_ckt8d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4to1"]
+albedo_texture = ExtResource("3_6guy4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mhg3c"]
+albedo_texture = ExtResource("4_bv7tl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ul2u"]
+albedo_texture = ExtResource("5_eupf1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xug8"]
+albedo_texture = ExtResource("6_5anq6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7fcsx"]
+albedo_texture = ExtResource("7_k5vho")
+
+[node name="Root Scene" instance=ExtResource("1_hcx11")]
+
+[node name="Steve_mesh" parent="RootNode/Steve/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_4brua")
+surface_material_override/1 = SubResource("StandardMaterial3D_r4to1")
+surface_material_override/2 = SubResource("StandardMaterial3D_mhg3c")
+surface_material_override/3 = SubResource("StandardMaterial3D_1ul2u")
+surface_material_override/4 = SubResource("StandardMaterial3D_0xug8")
+surface_material_override/5 = SubResource("StandardMaterial3D_7fcsx")
